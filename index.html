@@ -1,346 +1,285 @@
-
 <!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google Search Console Verification -->
-<meta name="google-site-verification" content="aH0XfK1Ddh2krkeYXsVeSduzLaEecU-x99iqEzeyO_I" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google Search Console Verification --><meta name="google-site-verification" content="aH0XfK1Ddh2krkeYXsVeSduzLaEecU-x99iqEzeyO_I"><title>Tech Satendra Kumar | Portfolio</title><meta name="description" content="Official portfolio of Tech Satendra Kumar, BCA Student, Web Developer, Programmer and Cyber Security learner.">
+<meta name="keywords" content="Tech Satendra Kumar, Satendra Kumar, BCA Student, Web Developer, Programming, Cyber Security">
+<meta name="author" content="Tech Satendra Kumar"><style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-<title>Satendra Kumar | Personal Portfolio</title>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
+/* NAVBAR */
+nav {
+    background: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f6f9;
-        color: #222;
-    }
+nav h2 {
+    color: white;
+}
 
-    /* Navbar */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #111, #444);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* PROFILE PHOTO */
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact {
+    background: #222;
+    color: white;
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 7px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
     nav {
-        background: #111;
-        padding: 15px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-
-    nav h2 {
-        color: white;
+        flex-direction: column;
     }
 
     nav ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
-
-    nav ul li a:hover {
-        color: #00bcd4;
-    }
-
-    /* Hero Section */
-    .hero {
-        min-height: 90vh;
-        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 40px 20px;
-        background: linear-gradient(135deg, #111, #333);
-        color: white;
-    }
-
-    .hero img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid white;
-        margin-bottom: 20px;
     }
 
     .hero h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 30px;
     }
 
-    .hero h3 {
-        font-size: 22px;
-        color: #00bcd4;
-        margin-bottom: 15px;
+    .hero img {
+        width: 150px;
+        height: 150px;
     }
+}
+</style></head><body><!-- NAVIGATION --><nav>
+    <h2>Tech Satendra Kumar</h2><ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 
-    .hero p {
-        max-width: 600px;
-        margin: auto;
-        line-height: 1.7;
-        font-size: 17px;
-    }
+</nav><!-- HOME --><section class="hero" id="home">
+    <div>    <!-- PHOTO -->
+    <img src="./profile.jpg" alt="Tech Satendra Kumar Photo">
 
-    .btn {
-        display: inline-block;
-        margin-top: 25px;
-        padding: 12px 25px;
-        background: #00bcd4;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
-    .btn:hover {
-        background: #0097a7;
-    }
-
-    /* Sections */
-    section {
-        padding: 70px 20px;
-        text-align: center;
-    }
-
-    section h2 {
-        font-size: 32px;
-        margin-bottom: 25px;
-    }
-
-    .about p {
-        max-width: 700px;
-        margin: auto;
-        line-height: 1.8;
-        font-size: 17px;
-    }
-
-    /* Skills */
-    .skills-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .skill {
-        background: white;
-        padding: 15px 25px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        font-size: 18px;
-    }
-
-    /* Projects */
-    .projects-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .project {
-        width: 280px;
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-    }
-
-    .project h3 {
-        margin-bottom: 10px;
-    }
-
-    .project p {
-        line-height: 1.6;
-    }
-
-    /* Contact */
-    .contact {
-        background: #222;
-        color: white;
-    }
-
-    .contact p {
-        margin: 12px 0;
-        font-size: 17px;
-    }
-
-    .social-links {
-        margin-top: 25px;
-    }
-
-    .social-links a {
-        display: inline-block;
-        margin: 8px;
-        padding: 12px 18px;
-        background: #00bcd4;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
-    .social-links a:hover {
-        background: #0097a7;
-    }
-
-    /* Footer */
-    footer {
-        background: #111;
-        color: white;
-        text-align: center;
-        padding: 15px;
-    }
-
-    /* Mobile */
-    @media (max-width: 600px) {
-        nav {
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        nav ul {
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .hero h1 {
-            font-size: 30px;
-        }
-
-        .hero img {
-            width: 150px;
-            height: 150px;
-        }
-    }
-</style>
-
-</head><body><!-- Navigation -->
-<nav>
-    <h2>Satendra Kumar</h2>
-
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- Home -->
-<section class="hero" id="home">
-    <div>
-
-        <img src="./profile.jpg" alt="Satendra Kumar Photo">
-
-        <h1>Satendra Kumar</h1>
-
-        <h3>BCA Student | Web Developer</h3>
-
-        <p>
-            Welcome to my personal portfolio website.
-            I am a BCA student and I am learning Web Development,
-            Programming and Cyber Security.
-        </p>
-
-        <a href="#contact" class="btn">Contact Me</a>
-
-    </div>
-</section>
-
-<!-- About -->
-<section class="about" id="about">
-    <h2>About Me</h2>
+    <h1>Tech Satendra Kumar</h1>
+    <h3>BCA Student | Web Developer</h3>
 
     <p>
-        Hello! My name is Satendra Kumar. I am a BCA student and
-        I am interested in Web Development, Programming and Technology.
-        I am continuously learning new skills and working on improving
-        my knowledge in the IT field.
+        Welcome to my personal portfolio website.
+        I am Tech Satendra Kumar, a BCA student, and I am learning
+        Web Development, Programming and Cyber Security.
     </p>
-</section>
 
-<!-- Skills -->
-<section id="skills">
-    <h2>My Skills</h2>
+    <a href="#contact" class="btn">Contact Me</a>
 
-    <div class="skills-container">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">C Programming</div>
-        <div class="skill">Web Development</div>
-        <div class="skill">Cyber Security</div>
+</div>
+
+</section><!-- ABOUT --><section class="about" id="about">
+    <h2>About Tech Satendra Kumar</h2><p>
+    Hello! My name is Tech Satendra Kumar. I am a BCA student and
+    I am interested in Web Development, Programming and Cyber Security.
+    I am continuously learning new skills and improving my knowledge
+    in the IT field.
+</p>
+
+</section><!-- SKILLS --><section id="skills">
+    <h2>My Skills</h2><div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">C Programming</div>
+    <div class="skill">Web Development</div>
+    <div class="skill">Cyber Security</div>
+</div>
+
+</section><!-- PROJECTS --><section id="projects">
+    <h2>My Projects</h2><div class="projects-container">
+    <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive personal portfolio website created using HTML and CSS.</p>
     </div>
-</section>
 
-<!-- Projects -->
-<section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project">
-            <h3>Personal Portfolio</h3>
-            <p>A responsive personal portfolio website created using HTML and CSS.</p>
-        </div>
-
-        <div class="project">
-            <h3>Web Development Project</h3>
-            <p>A website project created while learning modern web development.</p>
-        </div>
-
-        <div class="project">
-            <h3>Future Projects</h3>
-            <p>More exciting projects will be added here soon.</p>
-        </div>
-
+    <div class="project">
+        <h3>Web Development Project</h3>
+        <p>A website project created while learning modern web development.</p>
     </div>
-</section>
 
-<!-- Contact -->
-<section class="contact" id="contact">
-    <h2>Contact Me</h2>
-
-    <p>Feel free to connect with me on social media.</p>
-
-    <div class="social-links">
-
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/share/1E7DjXFRQy/" target="_blank">
-            Facebook
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/kumarsatendra87?igsi=MWprMTN0MDIwdnZoYw==" target="_blank">
-            Instagram
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/kumarsatendra817165-collab" target="_blank">
-            GitHub
-        </a>
-
+    <div class="project">
+        <h3>Future Projects</h3>
+        <p>More exciting projects will be added here soon.</p>
     </div>
-</section>
+</div>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Satendra Kumar | Personal Portfolio</p>
-</footer>
+</section><!-- CONTACT --><section class="contact" id="contact">
+    <h2>Contact Me</h2><p>Connect with Tech Satendra Kumar on social media.</p>
 
-</body>
+<div class="social-links">
+
+    <a href="https://www.instagram.com/kumarsatendra87?igsi=MWprMTN0MDIwdnZoYw==" target="_blank">
+        Instagram
+    </a>
+
+    <a href="https://www.facebook.com/share/1GHjkyujuz/" target="_blank">
+        Facebook
+    </a>
+
+    <a href="https://youtube.com/@satendrakumar-87?si=yY-Joe_AHqTb5QLV" target="_blank">
+        YouTube
+    </a>
+
+    <a href="https://github.com/kumarsatendra817165-collab" target="_blank">
+        GitHub
+    </a>
+
+    <a href="mailto:kumarsatendra817165@gmail.com">
+        Email Me
+    </a>
+
+</div>
+
+</section><!-- FOOTER --><footer>
+    <p>© 2026 Tech Satendra Kumar | Personal Portfolio</p>
+</footer></body>
 </html>
